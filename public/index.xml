@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>schemar&#39;s blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo</generator>
+    <description>Recent content on schemar&#39;s blog</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2020 16:34:43 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oversimplified DNS</title>
+      <link>http://localhost:1313/posts/oversimplified-dns/</link>
+      <pubDate>Sun, 08 Mar 2020 17:36:15 +0000</pubDate>
+      <guid>http://localhost:1313/posts/oversimplified-dns/</guid>
+      <description>Our computers access a server via the server&amp;#39;s IP address. Humans use domains instead. How do our browsers know the IP of a domain? The answer is DNS.</description>
+    </item>
   </channel>
 </rss>
