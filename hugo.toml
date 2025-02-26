@@ -7,6 +7,9 @@ theme = "PaperMod"
     title = "schemar's blog"
     content = "A blog which couldn't be updated less frequently."
   [[params.socialIcons]]
+    name = "rss"
+    url = "/posts/index.xml"
+  [[params.socialIcons]]
     name = "github"
     url = "https://github.com/schemar"
   [[params.socialIcons]]
@@ -20,3 +23,9 @@ theme = "PaperMod"
     identifier = "archive"
     name = "Archive"
     url = "/archive/"
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/posts/index.xml"
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
