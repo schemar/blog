@@ -3,12 +3,13 @@ languageCode = 'en-us'
 title = "schemar's blog"
 theme = "PaperMod"
 [params]
+  ShowFullTextinRSS = true
   [params.homeInfoParams]
     title = "schemar's blog"
     content = "A blog which couldn't be updated less frequently."
   [[params.socialIcons]]
     name = "rss"
-    url = "/posts/index.xml"
+    url = "/index.xml"
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/schemar"
@@ -26,6 +27,6 @@ theme = "PaperMod"
   [[menu.main]]
     identifier = "rss"
     name = "RSS"
-    url = "/posts/index.xml"
+    url = "/index.xml"
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
