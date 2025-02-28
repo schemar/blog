@@ -1,11 +1,15 @@
-+++
-title= 'Oversimplified DNS'
-slug = 'oversimplified-dns'
-date = '2020-03-08T17:36:15.000Z'
-author = 'schemar'
-lastmod = '2020-08-23T16:34:43.000Z'
-description = "Our computers access a server via the server's IP address. Humans use domains instead. How do our browsers know the IP of a domain? The answer is DNS."
-+++
+---
+title: "Oversimplified DNS"
+slug: "oversimplified-dns"
+date: "2020-03-08T17:36:15.000Z"
+author: "schemar"
+lastmod: "2020-08-23T16:34:43.000Z"
+description: "Our computers access a server via the server's IP address. Humans use domains instead. How do our browsers know the IP of a domain? The answer is DNS."
+cover:
+  image: "jordan-harrison-40XgDxBfYXM-unsplash.jpg"
+  caption: "Photo by [Jordan Harrison](https://unsplash.com/@jordanharrison?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/network?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+  relative: true
+---
 
 Our computers access servers on the internet via the servers' respective IP address. For convenience, however, we use domains as they are easier for us to remember. So how do our browsers know which IP to contact when we ask for a domain? The answer is the Domain Name System or, in short, DNS.
 
