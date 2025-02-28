@@ -10,4 +10,9 @@ init:
 
 # Run the server locally
 local:
+  rm -rf ./public ./resources
   hugo server -D
+
+# Create a new post
+new-post name:
+  hugo new content posts/{{name}}.md
