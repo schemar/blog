@@ -60,8 +60,12 @@
   --tertiary: var(--catppuccin-latte-subtext1);
   --content: var(--catppuccin-latte-text);
   --hljs-bg: var(--catppuccin-latte-surface0);
-  --code-bg: var(--catppuccin-latte-base);
+  --code-bg: var(--catppuccin-latte-surface0);
   --border: var(--catppuccin-latte-overlay0);
+}
+
+.list {
+  background: var(--theme);
 }
 
 .dark {
@@ -72,8 +76,12 @@
   --tertiary: var(--catppuccin-macchiato-subtext1);
   --content: var(--catppuccin-macchiato-text);
   --hljs-bg: var(--catppuccin-macchiato-surface0);
-  --code-bg: var(--catppuccin-macchiato-base);
+  --code-bg: var(--catppuccin-macchiato-surface0);
   --border: var(--catppuccin-macchiato-lavender);
+}
+
+.dark.list {
+  background: var(--theme);
 }
 
 .chroma {
