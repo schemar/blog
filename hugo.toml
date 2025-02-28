@@ -4,6 +4,9 @@ title = "schemar's blog"
 theme = "PaperMod"
 [params]
   ShowFullTextinRSS = true
+  [params.assets]
+    disableScrollBarStyle = true
+    disableHLJS = true
   [params.homeInfoParams]
     title = "schemar's blog"
     content = "A blog which couldn't be updated less frequently."
@@ -30,3 +33,19 @@ theme = "PaperMod"
     url = "/index.xml"
 [outputs]
   home = ["HTML", "RSS"]
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = "catppuccin-macchiato"
+    tabWidth = 2
+    wrapperClass = "highlight"
+
