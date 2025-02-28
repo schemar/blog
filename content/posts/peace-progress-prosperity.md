@@ -5,10 +5,6 @@ date: 2020-04-16T19:47:00.000Z
 author: Martin
 lastmod: 2020-04-26T19:51:16.000Z
 description: I created a synth pop song.
-cover:
-  image: "franck-v-JjGXjESMxOY-unsplash.jpg"
-  caption: "Photo by [Possessed Photography](https://unsplash.com/@possessedphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
-  relative: true
 ---
 
 I wanted to create a synthetic "pop" song on the topic of peaceful and progressive human-machine cooperation.
