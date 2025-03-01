@@ -45,7 +45,6 @@ level2     IN A     5.6.7.8
 level2     IN AAAA  2001:db4::1
 ```
 
-`A` resource records of a DNS
 The `@` character is a placeholder for the domain where this name server is authoritative. So in this case `level1.com.`.
 
 `AAAA` is a so-called _quad-A_ record and specifies an IPv6, whereas `A` records specify an IPv4. It is listed only for reference and ignored in the further discussion.
@@ -63,7 +62,6 @@ level2b     IN NS    ns1.level2b.level1.com.
 level2b     IN NS    ns2.level2b.level1.com.
 ```
 
-`NS` resource records of a DNS
 The period at the end of the name servers' domain prevents the lookup at e.g. `ns1.level2b.level1.com.level1.com.`, which wouldn't make any sense (the domain of the `@` placeholder could be added to `ns1.level2b.level1.com` if it didn't have a trailing period).
 
 The example above tells us that the authoritative name servers of the domain `level2b.level1.com.` are at `ns1.level2b.level1.com.` and `ns2.level2b.level1.com.`.
