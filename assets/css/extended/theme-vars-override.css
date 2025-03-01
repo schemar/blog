@@ -88,14 +88,6 @@
   background-color: var(--catppuccin-macchiato-surface0) !important;
 }
 
-.chroma code {
-  background-color: var(--catppuccin-macchiato-surface0) !important;
-}
-
-.post-content .highlight:not(table) {
-  background-color: var(--catppuccin-macchiato-surface0) !important;
-}
-
 .post-content pre code {
   background-color: var(--catppuccin-macchiato-surface0) !important;
 }
