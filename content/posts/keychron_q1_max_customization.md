@@ -75,7 +75,7 @@ For example, the Q1 Max is in the `wireless_playground` branch.
 You find your keyboard under `keyboards/keychron/`.
 
 Each keyboard has its own readme, which also explains how to build and flash the firmware.
-For example, to flash the Q1 Max firmware, you need to run the following command from the repository root:
+For example, to flash the Q1 Max firmware, you need to run the following command from the repository root (replace `default` with your keymap's name if you created your own):
 
 ```bash
 make keychron/q1_max/ansi_encoder:default:flash
