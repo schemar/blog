@@ -1,18 +1,79 @@
-<script
-  src="https://giscus.app/client.js"
-  data-repo="schemar/blog"
-  data-repo-id="R_kgDON_aF1A"
-  data-category="General"
-  data-category-id="DIC_kwDON_aF1M4ComV4"
-  data-mapping="pathname"
-  data-strict="1"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="catppuccin_macchiato"
-  data-lang="en"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async
-></script>
+<script>
+  let theme = document.body.classList.contains("dark")
+    ? "catppuccin_macchiato"
+    : "catppuccin_latte";
+  let giscusAttributes = {
+    src: "https://giscus.app/client.js",
+    "data-repo": "schemar/blog",
+    "data-repo-id": "R_kgDON_aF1A",
+    "data-category": "General",
+    "data-category-id": "DIC_kwDON_aF1M4ComV4",
+    "data-mapping": "pathname",
+    "data-strict": "1",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "top",
+    "data-theme": theme,
+    "data-lang": "en",
+    crossorigin: "anonymous",
+    async: "",
+  };
 
+  let giscusScript = document.createElement("script");
+  Object.entries(giscusAttributes).forEach(([key, value]) =>
+    giscusScript.setAttribute(key, value),
+  );
+  document.querySelector("main").appendChild(giscusScript);
+
+  function changeGiscusTheme() {
+    theme = document.body.classList.contains("dark")
+      ? "catppuccin_macchiato"
+      : "catppuccin_latte";
+
+    console.log("Changing giscus theme to: " + theme);
+    const iframe = document.querySelector("iframe.giscus-frame");
+
+    const setGisSrc = (theme) => {
+      if (!iframe) {
+        console.error("set src: Giscus iframe not found");
+        return;
+      }
+
+      const iframeSrc = iframe.src;
+      const iframeUrl = new URL(iframeSrc);
+      const iframeSearchParams = iframeUrl.searchParams;
+      iframeSearchParams.set("theme", theme);
+
+      iframe.src = iframeUrl.toString();
+      console.log("Giscus src changed to: " + iframe.src);
+    };
+
+    const sendMessage = (message) => {
+      if (iframe?.contentWindow) {
+        console.log("Sending message to giscus iframe: ", message);
+        iframe.contentWindow.postMessage(
+          { giscus: message },
+          "https://giscus.app",
+        );
+      } else {
+        console.error("sendMessage: Giscus iframe not found");
+      }
+    };
+
+    // Giscus doesn't accept messages if it's not loaded
+    if (iframe?.classList.contains("giscus-frame--loading")) {
+      setGisSrc(theme);
+    } else {
+      sendMessage({ setConfig: { theme } });
+    }
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+
+  if (typeof themeToggle !== "undefined") {
+    themeToggle.addEventListener("click", () =>
+      // Add timeout to wait for actual switch before changing theme.
+      setTimeout(changeGiscusTheme, 100),
+    );
+  }
+</script>
