@@ -4,6 +4,7 @@ title = "schemar's blog"
 theme = "PaperMod"
 [params]
   ShowFullTextinRSS = true
+  comments = true
   [params.assets]
     disableScrollBarStyle = true
     disableHLJS = true
