@@ -1,6 +1,10 @@
 # OS
 .DS_Store
 
+# Environment
+.direnv
+.envrc
+
 # Generated files by hugo
 /public/
 /resources/_gen/
