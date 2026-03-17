@@ -68,7 +68,7 @@
   background: var(--theme);
 }
 
-.dark {
+:root[data-theme="dark"] {
   --theme: var(--catppuccin-macchiato-base);
   --entry: var(--catppuccin-macchiato-mantle);
   --primary: var(--catppuccin-macchiato-text);
@@ -80,7 +80,7 @@
   --border: var(--catppuccin-macchiato-lavender);
 }
 
-.dark.list {
+:root[data-theme="dark"].list {
   background: var(--theme);
 }
 
