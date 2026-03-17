@@ -75,3 +75,7 @@
 .post-content pre code {
   background-color: var(--blueberry-peach-dark-surface0) !important;
 }
+
+.half-image {
+  width: calc(50% - 0.5rem);
+}
